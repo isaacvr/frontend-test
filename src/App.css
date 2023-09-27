@@ -4,3 +4,120 @@
   padding: 2rem;
   text-align: center;
 }
+
+/* Channels */
+.channel-container {
+  border-right: 1px solid var(--color-separator);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0rem;
+  gap: 1rem;
+  align-items: center;
+  width: 5rem;
+}
+
+.channel-container .channel-item {
+  --w: 3rem;
+  width: var(--w);
+  height: var(--w);
+  border-radius: 0.4rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.channel-container .channel-item:hover {
+  box-shadow: 0px 0px .8rem rgba(255, 255, 255, .3);
+}
+
+.channel-container .channel-item.active {
+  outline: .15rem solid #fff;
+  outline-offset: .3rem;
+}
+
+/* Sub-Channels */
+.sub-channels {
+  width: 18rem;
+}
+
+.sub-channels .channel-name {
+  border-bottom: 1px solid var(--color-separator);
+  height: 5rem;
+  display: grid;
+  place-content: center;
+  font-size: 1.3rem;
+}
+
+.sub-channels .summary {
+  border-bottom: 1px solid var(--color-separator);
+  display: grid;
+  gap: 0.2rem;
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+
+.sub-channels .summary li {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.sub-channels .summary li svg {
+  font-size: .8rem;
+}
+
+.sub-channels .sub-channels-content {
+  display: grid;
+  gap: 0.2rem;
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+
+.sub-channels .accordion {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-rows: 1.5rem 0fr;
+  transition: all 200ms;
+}
+
+.sub-channels .accordion.expanded {
+  grid-template-rows: 1.5rem 1fr;
+}
+
+.sub-channels .accordion span {
+  display: flex;
+  gap: 0.5rem;
+  color: #ccc;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sub-channels .accordion span svg {
+  transition: all 200ms;
+  transform: rotate(-90deg);
+}
+
+.sub-channels .accordion.expanded span svg {
+  transform: rotate(0deg);
+}
+
+.sub-channels .accordion ul {
+  margin-left: .5rem;
+  overflow: hidden;
+}
+
+.sub-channels .accordion ul li {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.sub-channels .accordion ul li svg {
+  width: .7rem;
+}
+
+/* Chat */
+.chat {
+  width: calc(100% - 5rem - 18rem);
+}

@@ -14,6 +14,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* Custom variables */
+  --color-base: #3e103f;
+  --color-separator: #777;
 }
 
 .arroba, .hash, .email, .url {

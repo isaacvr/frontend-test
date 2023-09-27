@@ -40,10 +40,10 @@ function App() {
         
         {/* Summary */}
         <ul className='summary'>
-          <li className='font-bold'> <GrTextAlignFull /> All unread </li>
-          <li> <BiMessageRounded /> Threads </li>
-          <li> <FiAtSign /> Mentions &amp; reactions </li>
-          <li> <FaRegCopy /> Drafts </li>
+          <li className='font-bold link'> <GrTextAlignFull /> All unread </li>
+          <li className='link'> <BiMessageRounded /> Threads </li>
+          <li className='link'> <FiAtSign /> Mentions &amp; reactions </li>
+          <li className='link'> <FaRegCopy /> Drafts </li>
         </ul>
 
         {/* Starred and Channels */}
@@ -54,9 +54,9 @@ function App() {
             </span>
 
             <ul>
-              <li><FaHashtag/> Announcements</li>
-              <li><FaHashtag/> social-media</li>
-              <li><FaHashtag/> triage-issues</li>
+              <li className='link'><FaHashtag/> Announcements</li>
+              <li className='link'><FaHashtag/> social-media</li>
+              <li className='link'><FaHashtag/> triage-issues</li>
             </ul>
           </div>
          
@@ -66,9 +66,9 @@ function App() {
             </span>
 
             <ul>
-              <li><FaHashtag/> accounting</li>
-              <li><FaHashtag/> design-crit</li>
-              <li><FaHashtag/> design-team</li>
+              <li className='link'><FaHashtag/> accounting</li>
+              <li className='link'><FaHashtag/> design-crit</li>
+              <li className='link'><FaHashtag/> design-team</li>
             </ul>
           </div>
           
@@ -78,9 +78,9 @@ function App() {
             </span>
 
             <ul>
-              <li><FaHashtag/> Slackbot</li>
-              <li><FaHashtag/> Someone (you)</li>
-              <li><FaHashtag/> John Doe</li>
+              <li className='link'><FaHashtag/> Slackbot</li>
+              <li className='link'><FaHashtag/> Someone (you)</li>
+              <li className='link'><FaHashtag/> John Doe</li>
             </ul>
           </div>
 
